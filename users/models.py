@@ -52,3 +52,6 @@ class CustomUser(AbstractUser):
         (ADMIN, 'مدیر'),
     ]
     role = models.CharField(max_length=255, choices=ROLE_CHOICES, default=USER)
+
+class User(AbstractUser):
+    is_admin = models.BooleanField(default=False)

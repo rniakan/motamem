@@ -29,3 +29,7 @@ admin.site.register(Post, PostAdmin)
 
 admin.site.register(UserType, UserTypeAdmin)
 admin.site.register(UserProfile, UserProfileAdmin)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('username', 'email', 'is_admin')
+
+admin.site.register(User, UserAdmin)

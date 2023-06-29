@@ -1,0 +1,553 @@
+<div id="sidebar-primary">
+    <ul class="widget-container">
+        <li id="black-studio-tinymce-13" class="widget widget_black_studio_tinymce">
+            <div class="textwidget"><p></p>
+                <p></p>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1-%D9%88%DB%8C%DA%98%D9%87/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#ffffff;background-color:#009933;border-color:#007a29;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px"
+                        target="_self"><span
+                        style="color:#ffffff;padding:0px 20px;font-size:16px;line-height:32px;border-color:#4db870;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;text-shadow:none;-moz-text-shadow:none;-webkit-text-shadow:none"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ثبت نام در متمم &nbsp; <br></span></a>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1-%d9%88%db%8c%da%98%d9%87/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#ffffff;background-color:#009933;border-color:#007a29;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px"
+                        target="_self"><span
+                        style="color:#ffffff;padding:0px 20px;font-size:16px;line-height:32px;border-color:#4db870;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;text-shadow:px px px #627179;-moz-text-shadow:px px px #627179;-webkit-text-shadow:px px px #627179"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; خرید یا تمدید اشتراک</span></a>
+                </div>
+                <p></p>
+                <p></p>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%81%D8%B1%D9%88%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D8%AA%D9%85%D9%85/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#ffffff;background-color:#009933;border-color:#007a29;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px"
+                        target="_self"><span
+                        style="color:#ffffff;padding:0px 20px;font-size:16px;line-height:32px;border-color:#4db870;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;text-shadow:none;-moz-text-shadow:none;-webkit-text-shadow:none"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;فروشگاه متمم &nbsp;&nbsp;<br></span></a>
+                </div>
+                <p></p>
+                <p></p>
+                <p></p></div>
+        </li>
+    </ul>
+    <ul class="nd_tabs">
+{#        <li class="active"><a href="#nd_login_form">ورود به متمم</a></li>#}
+        <li class="active"><a href=" {% url 'fast_login' %}">ورود به متمم</a></li>
+        <li><a href="#nd_register_form">ثبت نام در متمم</a></li>
+    </ul>
+    ﻿
+    <form action="{% url 'fast_login' %}" method="post" class="nd_form" id="nd_login_form" style="">
+        {% csrf_token %}
+        <div class="nd_form_inner"><input type="text" class="text" name="log" id="nd_username"
+                                          placeholder="شناسه کاربری">
+            <p></p> <input type="password" class="text" name="pwd" id="nd_password" placeholder="رمز عبور">
+            <p></p> <input type="submit" class="button" value="ورود به متمم">
+            <p><a class="forgotten" href="#nd_lost_password_form">رمز عبورم را فراموش کرده ام</a></p> <input
+                    name="nd_login" type="hidden" value="true"> <input name="rememberme" type="hidden" id="rememberme"
+                                                                       value="forever"> <input name="redirect_to"
+                                                                                               type="hidden"
+                                                                                               id="redirect_to"
+                                                                                               value="https://motamem.org/">
+        </div>
+    </form>
+    ﻿
+    <form action="https://motamem.org/" method="post" class="nd_form" autocomplete="off" id="nd_register_form"
+          style="display:none">
+        <div class="nd_form_inner"><p><label><input type="text" name="upme[first_name]" id="upme[first_name]"
+                                                    placeholder="نام و نام خانوادگی" class="input" value=""></label></p>
+            <p style="font-size: 13px !important;"><input type="text" class="text" name="username" id="nd_reg_username"
+                                                          placeholder="شناسه کاربری را انگلیسی بنویسید"></p>
+            <p><input type="text" class="text" name="email" id="nd_reg_email"
+                      placeholder=" ایمیل را بدون www وارد کنید"></p>
+            <p><input type="password" class="text" name="password" id="nd_reg_password" placeholder="پسورد"> <input
+                    type="password" style="font-size: 13px!important;" class="text" name="password2"
+                    id="nd_reg_password_2" placeholder="تکرار پسورد"></p>
+            <p><input type="hidden" name="cntctfrm_contact_action" value="true"
+                      style="padding:0px 0px !important;"><input type="hidden" name="cptch_result" value="V/s="> <input
+                    type="hidden" name="cptch_time" value="1678524457"> <input type="hidden" value="Version: 2.4">6 −
+                چهار = <input type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="1"
+                              style="margin-bottom:0;display:inline;font-size: 12px;width: 40px; padding:0px 0px !important;">
+                <label for="nd_reg_human"><br> <input type="checkbox" name="human"
+                                                      style=" float: right; width:4% !important;" id="nd_reg_human"><a
+                        href="https://motamem.org/%d8%b4%d8%b1%d8%a7%db%8c%d8%b7-%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85/"
+                        target="new">شرایط عضویت را خوانده و پذیرفته‌ام</a></label></p>
+            <p><input type="submit" class="button" value="ثبت نام در متمم "><input name="nd_register" type="hidden"
+                                                                                   value="true"></p></div>
+    </form>
+    ﻿
+    <form action="https://motamem.org/" method="post" class="nd_form" autocomplete="off" id="nd_lost_password_form"
+          style="display:none">
+        <div class="nd_form_inner"><p>شناسه کاربری یا ایمیل خود را وارد نمایید.در صورت صحیح بودن، پسورد جدید به ایمیلتان
+            ارسال خواهد شد</p>
+            <p><label for="nd_lost_username">شناسه کاربری یا ایمیل:</label> <input type="text" class="text"
+                                                                                   name="username_or_email"
+                                                                                   id="nd_lost_username"
+                                                                                   placeholder="شناسه کاربری و یا ایمیل">
+            </p>
+            <p><input type="submit" class="button" value="بازیابی پسورد →"><input name="nd_lostpass" type="hidden"
+                                                                                  value="true"></p></div>
+    </form>
+    <ul class="widget-container">
+        <li id="black-studio-tinymce-25" class="widget widget_black_studio_tinymce">
+            <div class="textwidget"></div>
+        </li>
+    </ul>
+    <ul class="widget-container">
+        <li id="black-studio-tinymce-7" class="widget widget_black_studio_tinymce"><h3 class="widgettitle">آخرین کاربران
+            ویژه متمم</h3>
+            <div class="textwidget"><span dir="RTL"
+                                          style="font-size:13px; line-height:30px;text-align: right;">ورود <span
+                    style="color: #990000;"><a style="color:#990000" href="https://motamem.org/profile/265164">ساسان</a>&nbsp; و&nbsp;<a
+                    style="color:#990000"
+                    href="https://motamem.org/profile/149915">میثم عبدالشاهی</a></span>&nbsp; و <span
+                    style="color: #990000;"><a style="color:#990000" href="https://motamem.org/profile/216179">فائزه</a> </span>به جمع کاربران ویژه متمم را خوش‌آمد می‌گوییم</span>
+            </div>
+        </li>
+    </ul>
+    <ul class="widget-container">
+        <li id="black-studio-tinymce-24" class="widget widget_black_studio_tinymce"><h3 class="widgettitle">دوستان برتر
+            متممی در دو هفته اخیر</h3>
+            <div class="textwidget"><p></p>
+                <ul>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/313">هیوا</a> (۵۸ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/66883">مرضيه رفعتي</a> (۵۷ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/176039">دانشجوی همیشگی مدیریت</a> (۵۵ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/129731">جواد خوانساری</a> (۵۳ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/261079">مهدی م</a> (۴۳ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/100065">یعقوب دلیجه</a> (۳۷ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/250932">محمد هاشمی</a> (۳۷ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/26374">سارا حق بین</a> (۳۶ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/429">شهرزاد</a> (۳۶ امتیاز)</span></li>
+                    <li><span style="font-family:IRANSans" class="comment-author-link"><a
+                            href="https://motamem.org/profile/41084">محمدروفرش‌باف</a> (۳۵ امتیاز)</span></li>
+                </ul>
+                <p></p></div>
+        </li>
+    </ul>
+    <ul class="widget-container">
+        <li id="black-studio-tinymce-11" class="widget widget_black_studio_tinymce">
+            <div class="textwidget">
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D8%B1%D8%B3%D9%87%D8%A7%DB%8C-%D8%AA%D9%88%D8%B3%D8%B9%D9%87-%D9%81%D8%B1%D8%AF%DB%8C-%D8%AF%D8%B1-%D9%85%D8%AA%D9%85%D9%85/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> توسعه فردی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D9%88%D8%B1%D9%87-mba-%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86-%D8%B1%D8%B4%D8%AA%D9%87-mba-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> دوره MBA و مدیریت کسب و کار</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D9%81%D8%A7%DB%8C%D9%84-%D8%B5%D9%88%D8%AA%DB%8C-%D8%B1%D8%A7%D8%AF%DB%8C%D9%88-%D9%85%D8%AA%D9%85%D9%85-2/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> دانلود فایل‌های صوتی رایگان</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA%DB%8C%D9%86%DA%AF/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> دیجیتال مارکتینگ</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%d9%85%d8%b3%db%8c%d8%b1-%d8%b4%d8%ba%d9%84%db%8c-%da%86%db%8c%d8%b3%d8%aa/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مسیر شغلی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A8%D9%87-%D8%B9%D9%86%D9%88%D8%A7%D9%86-%DB%8C%DA%A9-%D9%85%D9%87%D8%A7%D8%B1%D8%AA/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مهارت یادگیری</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D8%B9%D8%B2%D8%AA-%D9%86%D9%81%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> افزایش عزت نفس</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%da%a9%d9%88%da%86-%da%a9%db%8c%d8%b3%d8%aa-%d9%88-%da%a9%d9%88%da%86%db%8c%d9%86%da%af-%da%86%db%8c%d8%b3%d8%aa%d8%9f/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> کوچینگ</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%DA%86%DB%8C%D8%B3%D8%AA%D8%9F-%D8%AA%D9%81%DA%A9%D8%B1-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA%D8%9F-2/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> تفکر سیستمی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D9%87%D8%A7%D8%B1%D8%AA-%DA%A9%D8%A7%D8%B1-%D8%AA%DB%8C%D9%85%DB%8C-1-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AA%D9%81%D8%A7%D9%88%D8%AA-%D8%AA%DB%8C%D9%85-%D9%88-%DA%AF%D8%B1%D9%88%D9%87/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> کار تیمی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B4%D8%AE%D8%B5%DB%8C%D8%AA-%D8%B4%D9%86%D8%A7%D8%B3%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> شخصیت شناسی در کار و زندگی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> یادگیری زبان انگلیسی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%B2%D9%85%D8%A7%D9%86-%DA%86%D9%87-%D8%A7%D8%B5%D9%88%D9%84-%D9%88-%D8%AA%DA%A9%D9%86%DB%8C%DA%A9%E2%80%8C%D9%87%D8%A7%DB%8C%DB%8C-%D8%AF%D8%A7%D8%B1%D8%AF/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدیریت زمان و انضباط شخصی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B4%D9%86%D8%A7%D8%B3%D9%86%D8%A7%D9%85%D9%87-%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C-%D8%B4%D8%A7%D8%AF/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> چگونه شاد باشیم</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%DB%8C%D8%A7%D8%A8%DB%8C-%D8%B4%D8%BA%D9%84%DB%8C-%D8%B4%D9%86%D8%A7%D8%B3%D8%A7%DB%8C%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%D9%87%D8%A7/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> استعدادیابی و پرورش استعدادها</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B3%D8%B1%DB%8C-%D8%A7%D8%B5%D9%88%D9%84-%D9%88-%D9%81%D9%86%D9%88%D9%86-%D9%85%D8%B0%D8%A7%DA%A9%D8%B1%D9%87/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> اصول و فنون مذاکره</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%AA%D8%B9%D8%A7%D8%B1%D8%B6-%D8%AA%D8%B9%D8%B1%DB%8C%D9%81-%D8%AA%D8%B9%D8%A7%D8%B1%D8%B6/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدیریت تعارض</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B3%D9%88%D8%A7%D8%AF-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D9%86%D9%82%D8%B4%D9%87-%D8%B1%D8%A7%D9%87-%D8%AA%D8%B3%D9%84%D8%B7-%D8%A8%D8%B1-%D9%85%D9%87%D8%A7%D8%B1%D8%AA%D9%87%D8%A7%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> سواد دیجیتال و فناوری</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D9%88%D8%B1%D9%87-mba-%D8%AF%D8%B1%D8%B3-%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%DA%AF%DB%8C%D8%B1%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> تصمیم گیری</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D9%88%D8%B1%D9%87-mba-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D8%A7%D9%86%D8%B3%D8%A7%D9%86%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدیریت منابع انسانی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84-%D9%85%D8%A7%D8%B1%DA%A9%D8%AA%DB%8C%D9%86%DA%AF/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> دیجیتال مارکتینگ</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AA%D8%AD%D9%84%DB%8C%D9%84-%D8%B1%D9%81%D8%AA%D8%A7%D8%B1-%D9%85%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%AF%D8%B1%D8%B3/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> تحلیل رفتار متقابل</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%DA%A9%D8%AA%D8%A7%D8%A8%D9%87%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> معرفی کتابهای مدیریتی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%d9%85%d8%b9%d8%b1%d9%81%db%8c-%da%a9%d8%aa%d8%a7%d8%a8%d9%87%d8%a7%db%8c-%d8%b1%d9%88%d8%a7%d9%86%d8%b4%d9%86%d8%a7%d8%b3%db%8c/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> معرفی کتابهای روانشناسی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%AF%D8%B1%D8%B3-%D9%BE%D8%B1%D9%88%D8%B1%D8%B4-%D8%AA%D8%B3%D9%84%D8%B7-%DA%A9%D9%84%D8%A7%D9%85%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> هوش کلامی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D9%85%D8%AD%D8%AA%D9%88%D8%A7-%D9%88-%D8%AA%DA%A9%D9%86%DB%8C%DA%A9-%D9%87%D8%A7-%D9%88-%D8%B1%D9%88%D8%B4%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%D8%A7/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> استراتژی محتوا</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%85%D8%AF%D9%84-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1-%DA%86%DB%8C%D8%B3%D8%AA/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدل کسب و کار</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D9%88%D8%B1%D9%87-mba-%D9%85%D8%AF%D9%84-%D8%B0%D9%87%D9%86%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%D8%A7%D9%86/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدل ذهنی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D8%B1%D8%B3-seo-%DA%86%DB%8C%D8%B3%D8%AA%D8%9F-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1%D9%87%D8%A7%DB%8C-%D8%AC%D8%B3%D8%AA%D8%AC%D9%88/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> سئو</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D8%A7%D9%86%D8%B4-%D9%88-%D9%85%D9%87%D8%A7%D8%B1%D8%AA-%D9%81%D8%B1%D9%88%D8%B4-%D8%AD%D8%B1%D9%81%D9%87-%D8%A7%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> آموزش فروش و فروشندگی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%DA%A9%D8%A7%D8%B1%D8%A2%D9%81%D8%B1%DB%8C%D9%86%DB%8C-%D8%A7%DB%8C%D8%AC%D8%A7%D8%AF-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1-%DA%A9%D9%88%DA%86%DA%A9/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> کارآفرینی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D9%87%D8%A7%D8%B1%D8%AA-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مهارت ارتباطی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%B1%D9%88%D8%B4%D9%87%D8%A7%DB%8C-%D8%AA%D9%88%D9%84%DB%8C%D8%AF-%D9%85%D8%AD%D8%AA%D9%88%D8%A7-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> تولید محتوا</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C-%D8%B3%D8%B1%D9%81%D8%B5%D9%84-%D9%87%D8%A7-%D9%88-%D9%86%D9%82%D8%B4%D9%87-%D8%B1%D8%A7%D9%87-%D8%AF%D8%B1/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مدیریت بازاریابی</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%d8%a8%d8%b1%d9%86%d8%af-%da%86%db%8c%d8%b3%d8%aa-%d8%a8%d8%b1%d9%86%d8%af%db%8c%d9%86%da%af/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> برند</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> مشاوره مدیریت</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%D8%AF%D9%88%D8%B1%D9%87-mba-%D8%AF%D8%B1%D8%B3-%D8%AA%D9%81%DA%A9%D8%B1-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C%DA%A9/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> تفکر استراتژیک</span></a>
+                </div>
+                <div class="su-button-center"><a
+                        href="https://motamem.org/%d8%af%d8%b1%d8%b3-%d9%87%d9%88%d8%b4-%d9%87%db%8c%d8%ac%d8%a7%d9%86%db%8c/"
+                        class="su-button su-button-style-default su-button-wide"
+                        style="color:#9c0707;background-color:#eeeeee;border-color:#bebebe;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px"
+                        target="_self"><span
+                        style="color:#9c0707;padding:0px 16px;font-size:13px;line-height:26px;border-color:#f3f3f3;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-shadow:0px 0px 0px ;-moz-text-shadow:0px 0px 0px ;-webkit-text-shadow:0px 0px 0px"> هوش هیجانی</span></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="widget-container">
+        <li class="infobox-widget">
+            <ul>
+                <li class="infobox-widget-description"></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="widget-container">
+        <li id="recent-comments-9" class="widget widget_recent_comments"><h3 class="widgettitle">آخرین دیدگاه‌ها</h3>
+            <ul id="recentcomments">
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/46203/" rel="external" class="url">سپیده بختیاری</a></span> در
+                    <a href="https://motamem.org/%d8%a7%d9%86%d8%aa%d8%b8%d8%a7%d8%b1-%d8%a7%d8%b2-%d8%af%d8%b1%d8%b3-%d9%85%d8%b4%d8%a7%d9%88%d8%b1%d9%87-%d9%85%d8%af%db%8c%d8%b1%db%8c%d8%aa/comment-page-13/#comment-392429">مشاوره
+                        مدیریت | انتظار شما از آموزش مشاوره مدیریت چیست؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/258552/" rel="external" class="url">امیرحسین حیدری</a></span>
+                    در
+                    <a href="https://motamem.org/%d8%aa%d8%a7%d9%85%d8%a7%da%af%d9%88%da%86%db%8c/comment-page-2/#comment-392428">تاماگوچی
+                        | یک اسباب بازی ساده با پیامی مهم</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/264457/" rel="external" class="url">امیرحسین</a></span> در <a
+                        href="https://motamem.org/%db%8c%d8%a7%d8%af%da%af%db%8c%d8%b1%db%8c-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af%db%8c/comment-page-110/#comment-392427">کاربردی
+                    کردن آموخته‌ها: آیا به تفاوت آموختن و به کاربردن توجه کرده‌اید؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/66883/" rel="external" class="url">مرضيه رفعتي</a></span> در
+                    <a href="https://motamem.org/%d8%ad%d9%81%d8%b8-%d9%88%d8%b6%d8%b9%db%8c%d8%aa-%d9%85%d9%88%d8%ac%d9%88%d8%af/comment-page-25/#comment-392426">ترس
+                        از دست دادن و دام حفظ وضعیت موجود</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/154741/" rel="external" class="url">مبین الف</a></span> در <a
+                        href="https://motamem.org/%da%a9%d8%a7%d9%84%d8%a7%d9%87%d8%a7%db%8c-%d8%aa%d9%86%d8%af-%d9%85%d8%b5%d8%b1%d9%81-%db%8c%d8%a7-fmcg/comment-page-3/#comment-392425">کالاهای
+                    تند مصرف یا FMCG چگونه موفق می‌شوند؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/239609/" rel="external" class="url">مرضیه جلالی</a></span> در
+                    <a href="https://motamem.org/%d8%aa%d8%b9%d8%b1%db%8c%d9%81-%d9%be%d8%b1%d9%88%da%98%d9%87-%da%86%db%8c%d8%b3%d8%aa-%d9%88-%d8%aa%d9%81%d8%a7%d9%88%d8%aa-%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%88-%d8%b9%d9%85%d9%84%db%8c%d8%a7%d8%aa/comment-page-75/#comment-392424">تعریف
+                        پروژه چیست و تفاوت پروژه و عملیات از کجا آغاز می‌شود؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/265513/" rel="external"
+                        class="url">سید داود میرترابی</a></span> در <a
+                        href="https://motamem.org/%da%a9%d9%88%da%86%db%8c%d9%86%da%af-%d9%85%d9%82%d8%af%d9%85%d9%87/comment-page-13/#comment-392423">کوچینگ
+                    | مقدمه و ورود به دوره کوچینگ متمم</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/111740/" rel="external" class="url">محمد منصوری</a></span> در
+                    <a href="https://motamem.org/%d8%ae%d8%b7%d8%a7%d9%87%d8%a7%db%8c-%d8%b1%d8%a7%db%8c%d8%ac-%d8%aa%d8%b9%db%8c%db%8c%d9%86-%d9%81%d9%87%d8%b1%d8%b3%d8%aa-%da%af%d8%b2%db%8c%d9%86%d9%87%e2%80%8c%d9%87%d8%a7/comment-page-5/#comment-392422">خطاهای
+                        رایج در تعیین فهرست گزینه‌ها و آلترناتیوها</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/134149/" rel="external" class="url">مرتضی سالارکیا</a></span>
+                    در
+                    <a href="https://motamem.org/%d8%a7%d8%b3%d8%aa%d8%b1%d8%b3-%d8%aa%d8%ba%db%8c%db%8c%d8%b1%d8%a7%d8%aa-%d8%a8%d8%b2%d8%b1%da%af-%d8%b2%d9%86%d8%af%da%af%db%8c/comment-page-18/#comment-392420">مقایسه
+                        انواع عوامل استرس زای ناشی از تغییرات مهم زندگی</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/265513/" rel="external"
+                        class="url">سید داود میرترابی</a></span> در <a
+                        href="https://motamem.org/%da%a9%d9%86%d8%af-%da%a9%d8%b1%d8%af%d9%86-%d8%b3%d8%b1%d8%b9%d8%aa-%db%8c%d8%a7%d8%af%da%af%db%8c%d8%b1%db%8c/comment-page-59/#comment-392414">فایل
+                    صوتی مهارت یادگیری | اهمیت کند کردن سرعت یادگیری</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/116686/" rel="external" class="url">آتا ناصر</a></span> در <a
+                        href="https://motamem.org/%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8-%d9%86%d8%a7%d9%85-%d8%a8%d8%b1%d9%86%d8%af/comment-page-3/#comment-392406">انتخاب
+                    نام برند (نام تجاری) |‌ در انتخاب اسم برند به چه نکاتی توجه کنیم؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/80464/" rel="external" class="url">زینب رنجی</a></span> در <a
+                        href="https://motamem.org/%d8%b1%d9%88%d8%b4-%da%86%d8%a7%d9%82-%d9%84%d8%a7%d8%ba%d8%b1-%d8%b4%d8%af%d9%86/comment-page-5/#comment-392405">برای
+                    چاق شدن یا لاغر شدن، چه کارهایی انجام می‌دهید؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/205971/" rel="external" class="url">علی اکبر جعفری</a></span>
+                    در
+                    <a href="https://motamem.org/%d8%aa%d8%b9%d8%b1%db%8c%d9%81-%d8%af%d8%b1%da%a9-%d9%85%d8%b7%d9%84%d8%a8/comment-page-17/#comment-392404">منظور
+                        از درک مطلب چیست؟ چگونه برای درک مطلب هدف‌گذاری کنیم؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a href="https://motamem.org/profile/1433/"
+                                                                                rel="external"
+                                                                                class="url">سمانه هرسبان</a></span> در
+                    <a href="https://motamem.org/%d8%b4%d8%a7%d8%ae%d8%b5-%d8%aa%d9%88%d8%af%d9%87-%d8%a8%d8%af%d9%86%db%8c/comment-page-1/#comment-392403">شاخص
+                        توده بدنی چیست؟ فرمول BMI و معنای آن</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/80464/" rel="external" class="url">زینب رنجی</a></span> در <a
+                        href="https://motamem.org/%d8%ad%d8%b3%d8%b1%d8%aa-%d8%b2%d9%86%d8%af%da%af%db%8c/comment-page-9/#comment-392402">حسرتی
+                    که برایم باقی می‌ماند</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/140481/" rel="external" class="url">کاوه زرفشانی</a></span> در
+                    <a href="https://motamem.org/%d8%a2%d9%84%d9%88%d8%af%da%af%db%8c-%d8%a8%d9%87-%d9%88%d8%a7%d9%84%d8%af/comment-page-16/#comment-392401">آلودگی
+                        به والد – آیا بالغ شما هم به والد آلوده است؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/245592/" rel="external" class="url">امین نقدی</a></span> در <a
+                        href="https://motamem.org/%d9%85%d8%aa%d9%85%d9%85-%d8%ae%d9%88%d8%a7%d9%86%db%8c-%d9%86%d8%a7%d8%af%d8%b1%d8%b3%d8%aa/comment-page-118/#comment-392400">روشهای
+                    نادرست متمم‌خوانی!</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/260058/" rel="external" class="url">علی افخمی</a></span> در <a
+                        href="https://motamem.org/%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%da%98%db%8c-%d9%88-%d9%87%d9%85%d8%ac%d9%86%d8%b3-%d8%ae%d9%88%d8%a7%d8%b1%d8%a7%d9%86/comment-page-6/#comment-392399">کنیبالیزم
+                    | همجنس خواری در استراتژی، بازاریابی و فروش</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/140481/" rel="external" class="url">کاوه زرفشانی</a></span> در
+                    <a href="https://motamem.org/%d8%aa%d8%b4%d8%ae%db%8c%d8%b5-%d8%ad%d8%a7%d9%84%d8%a7%d8%aa-%d9%86%d9%81%d8%b3%d8%a7%d9%86%db%8c-%d8%aa%d8%ad%d9%84%db%8c%d9%84-%d8%b1%d9%81%d8%aa%d8%a7%d8%b1-%d9%85%d8%aa%d9%82%d8%a7%d8%a8%d9%84/comment-page-9/#comment-392398">الان
+                        در کدام وضعیت هستید: کودک،‌ بالغ یا والد؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/12426/" rel="external" class="url">رضا</a></span> در <a
+                        href="https://motamem.org/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86-%d9%85%d9%88%d8%b1%d9%81%db%8c-%d8%a7%d8%b1%d8%aa%d8%a8%d8%a7%d8%b7%d8%a7%d8%aa/comment-page-5/#comment-392397">قوانین
+                    مورفی در ارتباطات</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/100065/" rel="external" class="url">یعقوب دلیجه</a></span> در
+                    <a href="https://motamem.org/%d9%88%db%8c%da%98%da%af%db%8c-%d9%87%d8%a7%db%8c-%db%8c%da%a9-%d9%85%d8%af%db%8c%d8%b1-%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%85%d9%88%d9%81%d9%82-%d8%a8%d8%b1%d8%a7%db%8c-%d9%85%d8%af%db%8c%d8%b1%db%8c/comment-page-2/#comment-392396">ویژگی
+                        های یک مدیر پروژه موفق برای مدیریت پروژه های کوچک چیست</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/247550/" rel="external" class="url">امیرحسیننیازی</a></span>
+                    در
+                    <a href="https://motamem.org/%da%a9%d8%a7%d9%87%d8%b4-%d8%a7%d8%b3%d8%aa%d8%b1%d8%b3-%d8%a8%d8%a7-%d9%86%d9%88%d8%b4%db%8c%d8%af%d9%86-%d8%a2%d8%a8/comment-page-2/#comment-392395">کاهش
+                        استرس با نوشیدن آب</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/205971/" rel="external" class="url">علی اکبر جعفری</a></span>
+                    در
+                    <a href="https://motamem.org/%d8%af%d8%a7%d9%86%d8%b3%d8%aa%d9%86-%d8%ad%d9%81%d8%b8-%da%a9%d8%b1%d8%af%d9%86-%d8%a8%d9%87-%d8%ae%d8%a7%d8%b7%d8%b1-%d8%b3%d9%be%d8%b1%d8%af%d9%86/comment-page-48/#comment-392394">دانستن،
+                        حفظ کردن و به خاطر سپردن، می‌تواند یکی از اهداف آموزش باشد</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/156313/" rel="external" class="url">ناصرلازمی</a></span> در <a
+                        href="https://motamem.org/%d9%85%d8%af%db%8c%d8%b1%db%8c%d8%aa-%d8%aa%d8%b9%d8%a7%d8%b1%d8%b6-%d8%b1%db%8c%d8%b4%d9%87-%d9%87%d8%a7%db%8c-%d8%aa%d8%b9%d8%a7%d8%b1%d8%b6/comment-page-18/#comment-392393">انواع
+                    تعارض | آشنایی با ریشه‌های تعارض</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/241307/" rel="external" class="url">سیروس اشرفی</a></span> در
+                    <a href="https://motamem.org/%d9%85%d8%b3%d8%a7%d8%a6%d9%84-%da%86%d9%86%d8%af-%d8%b1%db%8c%d8%b4%d9%87-%d8%a7%db%8c/comment-page-64/#comment-392392">مسائل
+                        چند ریشه‌ای | زنبورهایی که ناپدید می‌شدند</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/232006/" rel="external" class="url">صادق بهرامی</a></span> در
+                    <a href="https://motamem.org/%d8%aa%d9%81%da%a9%d8%b1-%d8%b3%db%8c%d8%b3%d8%aa%d9%85%db%8c-%db%8c%da%a9-%da%a9%d9%84%db%8c%d9%be-%d9%88%db%8c%d8%af%d8%a6%d9%88%db%8c%db%8c/comment-page-28/#comment-392389">یک
+                        کلیپ تصویری درباره تفکر سیستمی (بالانس)</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/256227/" rel="external" class="url">امیر پالیزدار</a></span>
+                    در
+                    <a href="https://motamem.org/%d8%b4%da%a9%d9%84-%da%a9%d9%88%d8%aa%d8%a7%d9%87-%d9%be%d8%b1%d8%b3%d8%b4%d9%86%d8%a7%d9%85%d9%87-%d9%87%d8%a7%d9%84%d9%86%d8%af/comment-page-9/#comment-392384">جایگزینی
+                        برای پرسشنامه هالند (تطبیق شغل و شاغل)</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/35084/" rel="external" class="url">عادل جعفری</a></span> در <a
+                        href="https://motamem.org/%d8%af%d9%88%d8%b1%d9%87-mba-%d8%a7%d8%b1%d8%b2%d8%b4-%d9%88-%d8%a7%d8%b1%d8%b2%d8%b4-%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c/comment-page-8/#comment-392383">ارزش
+                    و ارزش آفرینی در کسب و کار (نقشه راه درس)</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/213168/" rel="external" class="url">مجید نظری</a></span> در <a
+                        href="https://motamem.org/%d8%ac%d8%a7%db%8c%da%af%d8%a7%d9%87-%db%8c%d8%a7%d8%a8%db%8c-%d8%a8%d8%b1%d9%86%d8%af/comment-page-5/#comment-392382">جایگاه
+                    برند چیست؟ | جایگاه یابی برند چگونه انجام می‌شود؟</a></li>
+                <li class="recentcomments"><span class="comment-author-link"><a
+                        href="https://motamem.org/profile/35084/" rel="external" class="url">عادل جعفری</a></span> در <a
+                        href="https://motamem.org/%d8%a7%d9%81%d8%b2%d8%a7%db%8c%d8%b4-%d8%b9%d8%b2%d8%aa-%d9%86%d9%81%d8%b3-%d9%87%d9%81%d8%aa%d9%87%e2%80%8c%db%8c-%d8%a7%d9%88%d9%84-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%be%d9%86/comment-page-18/#comment-392380">افزایش
+                    عزت نفس: هفته‌ی اول از برنامه پنج هفته‌ای</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
